@@ -2,9 +2,12 @@ import { extendTheme } from '@chakra-ui/react';
 
 export const theme = {
   colors: {
-    text: 'gray.800',
+    text: {
+      primary: 'white',
+      secondary: 'gray.300',
+    },
     background: 'gray.100',
-    highlight: 'blue.900',
+    highlight: 'green.800',
   },
   container: {
     width: {
@@ -30,19 +33,22 @@ export const chakraTheme = extendTheme({
   '2xl': '1600px',
   colors: {
     gray: {
-      900: '#181B23',
-      800: '#252525', // text
+      900: '#121412', // background
+      800: '#252525',
       700: '#353646',
       600: '#4B4D63',
       500: '#616480',
       400: '#6D6D6D',
-      300: '#9699B0',
+      300: '#B7B7B7', // secondary text
       200: '#D0D0D0',
-      100: '#EBEBEB', // background
+      100: '#EBEBEB',
       50: '#EEEEF2',
     },
-    blue: {
-      900: '#016AB4', // highlight
+    green: {
+      800: '#9CF945', // primary highlight
+    },
+    purple: {
+      600: '#BF99F2', // secondary highlight
     },
   },
   fonts: {
@@ -52,8 +58,8 @@ export const chakraTheme = extendTheme({
   styles: {
     global: {
       body: {
-        bg: 'gray.100',
-        color: 'gray.800',
+        bg: 'gray.900',
+        color: 'white',
       },
     },
   },
