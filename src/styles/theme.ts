@@ -9,6 +9,13 @@ export const theme = {
     background: 'gray.100',
     highlight: 'green.800',
   },
+  sizes: {
+    text: {
+      title: 8,
+      subtitle: 6,
+      description: 4,
+    },
+  },
   container: {
     width: {
       full: '100%',
