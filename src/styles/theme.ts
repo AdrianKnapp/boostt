@@ -6,14 +6,14 @@ export const theme = {
       primary: 'white',
       secondary: 'gray.300',
     },
-    background: 'gray.100',
+    background: 'gray.900',
     highlight: 'green.800',
   },
   sizes: {
     text: {
-      title: 8,
-      subtitle: 6,
-      description: 4,
+      title: 32,
+      subtitle: 24,
+      description: 16,
     },
   },
   container: {
@@ -53,6 +53,7 @@ export const chakraTheme = extendTheme({
     },
     green: {
       800: '#9CF945', // primary highlight
+      700: '#c7fc95',
     },
     purple: {
       600: '#BF99F2', // secondary highlight
