@@ -3,7 +3,7 @@ import { theme } from 'styles/theme';
 
 const Title = () => {
   return (
-    <Text fontSize={theme.sizes.text.title} fontWeight="bold">
+    <Text fontSize={40} fontWeight="bold">
       Torne-se
       <Text as="span" ml={2} color={theme.colors.highlight}>
         gigante
