@@ -8,6 +8,7 @@ export const theme = {
     },
     background: 'gray.900',
     highlight: 'green.800',
+    contrast: 'purple.600',
   },
   sizes: {
     text: {

@@ -1,13 +1,17 @@
+import { Flex } from '@chakra-ui/react';
+import Benefit from 'components/Benefit';
 import Container from 'components/Container';
 import Spacer from 'components/Spacer';
-
-import Benefit from './Benefit';
 
 const Benefits = () => {
   return (
     <Container direction="column">
       <Spacer>Assinando hoje você garante</Spacer>
-      <Benefit />
+      <Flex direction="column" gap={10}>
+        <Benefit />
+        <Benefit />
+        <Benefit />
+      </Flex>
     </Container>
   );
 };

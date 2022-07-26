@@ -26,7 +26,7 @@ const Seller = () => {
         fontSize={theme.sizes.text.description}
         color={theme.colors.text.secondary}
       >
-        <Text as="span" color="purple.600" mr={1}>
+        <Text as="span" color={theme.colors.contrast} mr={1}>
           Plano trimestral
         </Text>
         por apenas 149,90 R$
