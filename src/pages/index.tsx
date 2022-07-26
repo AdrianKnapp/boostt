@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Banner from 'sections/Banner';
 import Benefits from 'sections/Benefits';
+import Faq from 'sections/Faq';
+import Testimonies from 'sections/Testimonies';
 
 const Home = () => {
   return (
@@ -11,6 +13,8 @@ const Home = () => {
       </Head>
       <Banner />
       <Benefits />
+      <Testimonies />
+      <Faq />
     </>
   );
 };
