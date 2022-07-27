@@ -1,3 +1,4 @@
+import Footer from 'components/Footer';
 import Head from 'next/head';
 import Banner from 'sections/Banner';
 import Benefits from 'sections/Benefits';
@@ -17,6 +18,7 @@ const Home = () => {
       <Testimonies />
       <Faq />
       <Sell />
+      <Footer />
     </>
   );
 };

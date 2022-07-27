@@ -2,11 +2,97 @@ import { Box, Flex, Text } from '@chakra-ui/react';
 import { theme } from 'styles/theme';
 
 import Button from './Button';
-import Title from './Title';
 
-const Seller = () => {
+type SellerProps = {
+  isPrincipal?: boolean;
+};
+
+const Seller = ({ isPrincipal = false }: SellerProps) => {
+  const textPosition = isPrincipal ? 'center' : 'left';
+  const flexAlign = isPrincipal ? 'center' : 'flex-start';
+
+  const getTitle = () =>
+    isPrincipal ? (
+      <Text fontSize={40} fontWeight="bold" textAlign={textPosition}>
+        Tornete-se um boostter exclusivo e obtenha retornos expressivos.
+      </Text>
+    ) : (
+      <Text fontSize={40} fontWeight="bold" textAlign={textPosition}>
+        Torne-se
+        <Text as="span" ml={2} color={theme.colors.highlight}>
+          gigante
+        </Text>
+        <br /> com a gente.
+      </Text>
+    );
+
+  const getSubtitle = () =>
+    isPrincipal ? (
+      <Text
+        fontSize={theme.sizes.text.description}
+        color={theme.colors.text.secondary}
+      >
+        Assinatura trimestral de{' '}
+        <Text as="span" textDecoration="line-through">
+          R$ 314,90
+        </Text>{' '}
+        por
+      </Text>
+    ) : (
+      <Text fontSize={theme.sizes.text.description}>
+        Comece antes de todo mundo!
+      </Text>
+    );
+
+  const getPrice = () =>
+    isPrincipal ? (
+      <Text color={theme.colors.text.secondary} fontSize={20}>
+        <Text as="span" fontWeight="bold">
+          R${' '}
+        </Text>
+        <Text
+          as="span"
+          color={theme.colors.text.primary}
+          fontSize={theme.sizes.text.title}
+          fontWeight="bold"
+        >
+          149,90
+        </Text>{' '}
+        / mês
+      </Text>
+    ) : null;
+
+  const getDescription = () =>
+    isPrincipal ? (
+      <Text
+        fontSize={theme.sizes.text.description}
+        color={theme.colors.text.secondary}
+      >
+        Disponível somente por{' '}
+        <Text as="span" fontWeight="bold">
+          05 dias
+        </Text>{' '}
+        e
+        <Text as="span" fontWeight="bold">
+          {' '}
+          03 horas
+        </Text>
+        .
+      </Text>
+    ) : (
+      <Text
+        fontSize={theme.sizes.text.description}
+        color={theme.colors.text.secondary}
+      >
+        <Text as="span" color={theme.colors.contrast} mr={1}>
+          Plano trimestral
+        </Text>
+        por apenas 149,90 R$
+      </Text>
+    );
+
   return (
-    <Flex w="100%" direction="column" gap={2}>
+    <Flex w="100%" direction="column" gap={2} align={flexAlign}>
       <Box
         px={2}
         py={1}
@@ -17,20 +103,11 @@ const Seller = () => {
       >
         Lançamento
       </Box>
-      <Title />
-      <Text fontSize={theme.sizes.text.description}>
-        Comece antes de todo mundo!
-      </Text>
+      {getTitle()}
+      {getSubtitle()}
+      {getPrice()}
       <Button />
-      <Text
-        fontSize={theme.sizes.text.description}
-        color={theme.colors.text.secondary}
-      >
-        <Text as="span" color={theme.colors.contrast} mr={1}>
-          Plano trimestral
-        </Text>
-        por apenas 149,90 R$
-      </Text>
+      {getDescription()}
     </Flex>
   );
 };

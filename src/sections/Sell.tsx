@@ -7,8 +7,8 @@ const Sell = () => {
   return (
     <Container direction="column">
       <Spacer />
-      <Flex>
-        <Seller />
+      <Flex w="100%">
+        <Seller isPrincipal />
       </Flex>
     </Container>
   );
