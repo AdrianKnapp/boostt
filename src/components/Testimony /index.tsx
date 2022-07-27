@@ -5,7 +5,15 @@ import { theme } from 'styles/theme';
 
 const Testimony = () => {
   return (
-    <Box width="400px" height={200} overflow="hidden" position="relative">
+    <Box
+      width="400px"
+      height={200}
+      overflow="hidden"
+      position="relative"
+      borderRadius={5}
+      cursor="pointer"
+      role="group"
+    >
       <Box
         color={theme.colors.background}
         opacity={0.6}
@@ -16,6 +24,8 @@ const Testimony = () => {
         left="50%"
         transform="translate(-50%, -50%)"
         fontSize={50}
+        _groupHover={{ color: '#FF0000 !important' }}
+        transition=".2s"
       >
         <FaYoutube />
       </Box>

@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Banner from 'sections/Banner';
 import Benefits from 'sections/Benefits';
 import Faq from 'sections/Faq';
+import Sell from 'sections/Sell';
 import Testimonies from 'sections/Testimonies';
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
       <Benefits />
       <Testimonies />
       <Faq />
+      <Sell />
     </>
   );
 };
