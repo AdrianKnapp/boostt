@@ -8,7 +8,7 @@ import { theme } from 'styles/theme';
 const Faq = () => {
   return (
     <Container direction="column">
-      <Spacer showTitle={false} />
+      <Spacer hideTitle />
       <Flex width="100%">
         <Flex direction="column" width="100%" gap={2}>
           <Text

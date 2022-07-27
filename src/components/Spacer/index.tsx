@@ -4,24 +4,25 @@ import { theme } from 'styles/theme';
 
 type SpacerProps = {
   children?: React.ReactNode;
-  showTitle?: boolean;
+  hideTitle?: boolean;
 };
 
-const Spacer = ({ children, showTitle = true }: SpacerProps) => {
-  const getTitle = showTitle ? (
+const Spacer = ({ children, hideTitle = false }: SpacerProps) => {
+  const getTitle = !hideTitle ? (
     <Text
       fontSize={theme.sizes.text.title}
       fontWeight="bold"
       maxW={300}
       textAlign="center"
+      mt={8}
     >
       {children}
     </Text>
   ) : null;
 
   return (
-    <Flex w="100%" mt={16} mb={12} direction="column" align="center">
-      <Box mb={8}>
+    <Flex w="100%" mt={16} mb={16} direction="column" align="center">
+      <Box>
         <BiDollar fontSize={25} opacity={0.2} />
       </Box>
       {getTitle}

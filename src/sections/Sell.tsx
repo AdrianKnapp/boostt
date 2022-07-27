@@ -6,7 +6,7 @@ import Spacer from 'components/Spacer';
 const Sell = () => {
   return (
     <Container direction="column">
-      <Spacer />
+      <Spacer hideTitle />
       <Flex w="100%">
         <Seller isPrincipal />
       </Flex>
