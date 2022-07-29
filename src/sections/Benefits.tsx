@@ -7,7 +7,7 @@ const Benefits = () => {
   return (
     <Container direction="column">
       <Spacer>Assinando hoje você garante</Spacer>
-      <Flex direction="column" width="100%" gap={10}>
+      <Flex direction="column" width="100%" gap={['80px', '100px', '50px']}>
         <Benefit />
         <Benefit />
         <Benefit />

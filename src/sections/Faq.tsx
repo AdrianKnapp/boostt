@@ -9,7 +9,11 @@ const Faq = () => {
   return (
     <Container direction="column">
       <Spacer hideTitle />
-      <Flex width="100%">
+      <Flex
+        width="100%"
+        direction={['column', 'column', 'row']}
+        gap={[8, 6, 5, 0]}
+      >
         <Flex direction="column" width="100%" gap={2}>
           <Text
             letterSpacing={5}

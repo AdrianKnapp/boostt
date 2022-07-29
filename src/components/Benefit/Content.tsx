@@ -4,7 +4,7 @@ import { theme } from 'styles/theme';
 
 const Content = () => {
   return (
-    <Flex width="100%" direction="column" gap={2} justify="center">
+    <Flex width="100%" direction="column" gap={[2]} justify="center">
       <Text color={`${theme.colors.contrast}`}>
         <BsGraphUp fontSize={25} />
       </Text>

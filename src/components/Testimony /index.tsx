@@ -6,8 +6,7 @@ import { theme } from 'styles/theme';
 const Testimony = () => {
   return (
     <Box
-      width="400px"
-      height={200}
+      height={[100, 130, 200]}
       overflow="hidden"
       position="relative"
       borderRadius={5}
@@ -23,7 +22,7 @@ const Testimony = () => {
         top="50%"
         left="50%"
         transform="translate(-50%, -50%)"
-        fontSize={50}
+        fontSize={[30, 40, 50]}
         _groupHover={{ color: '#FF0000 !important' }}
         transition=".2s"
       >

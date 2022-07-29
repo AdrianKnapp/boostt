@@ -7,7 +7,12 @@ const Testimonies = () => {
   return (
     <Container direction="column">
       <Spacer>Depoimentos</Spacer>
-      <SimpleGrid columns={3} spacing={5}>
+      <SimpleGrid
+        minChildWidth={['100px', '180px', '300px']}
+        columns={[2, 2, 3]}
+        spacing={5}
+        width="100%"
+      >
         <Testimony />
         <Testimony />
         <Testimony />

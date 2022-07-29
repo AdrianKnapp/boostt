@@ -5,11 +5,12 @@ import Button from './Button';
 
 type SellerProps = {
   isPrincipal?: boolean;
+  isCentered?: boolean;
 };
 
-const Seller = ({ isPrincipal = false }: SellerProps) => {
-  const textPosition = isPrincipal ? 'center' : 'left';
-  const flexAlign = isPrincipal ? 'center' : 'flex-start';
+const Seller = ({ isPrincipal = false, isCentered = false }: SellerProps) => {
+  const textPosition = isPrincipal || isCentered ? 'center' : 'left';
+  const flexAlign = isPrincipal || isCentered ? 'center' : 'flex-start';
 
   const getTitle = () =>
     isPrincipal ? (
@@ -92,7 +93,7 @@ const Seller = ({ isPrincipal = false }: SellerProps) => {
     );
 
   return (
-    <Flex w="100%" direction="column" gap={2} align={flexAlign}>
+    <Flex w="100%" direction="column" gap={2} align={flexAlign} py={12}>
       <Box
         px={2}
         py={1}

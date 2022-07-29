@@ -6,8 +6,8 @@ const Image = () => {
     <Flex width="100%" justify="center">
       <Box
         position="relative"
-        width={415}
-        height={415}
+        width={['80%']}
+        height={[200, 350, 350, 400]}
         borderRadius={5}
         overflow="hidden"
       >
