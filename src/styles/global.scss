@@ -42,10 +42,13 @@ a {
 
 // End of resets
 
-.container {
-  width: 100%;
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0 1.25rem;
-  margin-top: 1.25rem;
+.swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+  opacity: 0.2;
+  background-color: white;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
 }
