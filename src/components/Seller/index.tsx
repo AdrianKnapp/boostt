@@ -12,13 +12,15 @@ const Seller = ({ isPrincipal = false, isCentered = false }: SellerProps) => {
   const textPosition = isPrincipal || isCentered ? 'center' : 'left';
   const flexAlign = isPrincipal || isCentered ? 'center' : 'flex-start';
 
+  const titleFontSize = [25, null, 40];
+
   const getTitle = () =>
     isPrincipal ? (
-      <Text fontSize={40} fontWeight="bold" textAlign={textPosition}>
+      <Text fontSize={titleFontSize} fontWeight="bold" textAlign={textPosition}>
         Tornete-se um boostter exclusivo e obtenha retornos expressivos.
       </Text>
     ) : (
-      <Text fontSize={40} fontWeight="bold" textAlign={textPosition}>
+      <Text fontSize={titleFontSize} fontWeight="bold" textAlign={textPosition}>
         Torne-se
         <Text as="span" ml={2} color={theme.colors.highlight}>
           gigante
@@ -68,6 +70,7 @@ const Seller = ({ isPrincipal = false, isCentered = false }: SellerProps) => {
       <Text
         fontSize={theme.sizes.text.description}
         color={theme.colors.text.secondary}
+        textAlign="center"
       >
         Disponível somente por{' '}
         <Text as="span" fontWeight="bold">
