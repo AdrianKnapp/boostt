@@ -7,10 +7,12 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import 'styles/global.scss';
+import Header from 'components/Header';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={chakraTheme}>
+      <Header />
       <Component {...pageProps} />
     </ChakraProvider>
   );

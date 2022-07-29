@@ -8,7 +8,7 @@ const Carousel = () => {
   return (
     <Flex
       w="100%"
-      h="80vh"
+      h="70vh"
       borderRadius={5}
       position="relative"
       overflow="hidden"
