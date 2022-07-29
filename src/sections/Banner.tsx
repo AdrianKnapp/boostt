@@ -5,7 +5,7 @@ import Seller from 'components/Seller';
 
 const Banner = () => {
   return (
-    <Container pt={10}>
+    <Container>
       <Flex w="50%">
         <Seller />
       </Flex>
