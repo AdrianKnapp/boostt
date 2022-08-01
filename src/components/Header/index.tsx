@@ -1,10 +1,12 @@
 import { Flex, Text } from '@chakra-ui/react';
 import Container from 'components/Container';
+import useCountdownTimer from 'hooks/useCountdownTimer';
 import useMediaQuery from 'hooks/useMediaQuery';
 import { theme } from 'styles/theme';
 
 const Header = () => {
   const [isMobile] = useMediaQuery(`(max-width: 768px)`);
+  const { days, hours, minutes } = useCountdownTimer();
 
   return (
     <Flex
@@ -25,15 +27,15 @@ const Header = () => {
         >
           Oferta de lançamento encerra em: {isMobile && <br />}
           <Text fontWeight="bold" as="span" color={theme.colors.highlight}>
-            05
+            {days}
           </Text>{' '}
           DIAS{' '}
           <Text fontWeight="bold" as="span" color={theme.colors.highlight}>
-            03
+            {hours}
           </Text>{' '}
           HORAS{' '}
           <Text fontWeight="bold" as="span" color={theme.colors.highlight}>
-            58
+            {minutes}
           </Text>{' '}
           MIN
         </Text>
