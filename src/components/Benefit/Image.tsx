@@ -1,7 +1,8 @@
 import { Box, Flex } from '@chakra-ui/react';
 import { default as NextImage } from 'next/image';
+import { ImageProps } from 'types/image';
 
-const Image = () => {
+const Image = ({ image }: { image: ImageProps }) => {
   return (
     <Flex width="100%" justify="center">
       <Box
@@ -12,8 +13,8 @@ const Image = () => {
         overflow="hidden"
       >
         <NextImage
-          src="https://images.unsplash.com/photo-1593672715438-d88a70629abe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-          alt="Benefit"
+          src={image.src}
+          alt={image.alt}
           layout="fill"
           objectFit="cover"
         />
