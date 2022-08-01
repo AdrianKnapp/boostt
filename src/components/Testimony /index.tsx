@@ -14,7 +14,7 @@ type TestimonyProps = {
 const Testimony = ({ thumbnail, video }: TestimonyProps) => {
   return (
     <Box
-      height={[100, 130, 200]}
+      height={[90, 130, 200]}
       overflow="hidden"
       position="relative"
       borderRadius={5}
