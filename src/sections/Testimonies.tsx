@@ -2,6 +2,7 @@ import { SimpleGrid } from '@chakra-ui/react';
 import Container from 'components/Container';
 import Spacer from 'components/Spacer';
 import Testimony from 'components/Testimony ';
+import testimoniesData from 'mocks/testimonies';
 
 const Testimonies = () => {
   return (
@@ -13,12 +14,13 @@ const Testimonies = () => {
         spacing={5}
         width="100%"
       >
-        <Testimony />
-        <Testimony />
-        <Testimony />
-        <Testimony />
-        <Testimony />
-        <Testimony />
+        {testimoniesData.map((testimony) => (
+          <Testimony
+            key={testimony.video.src}
+            thumbnail={testimony.thumbnail}
+            video={testimony.video}
+          />
+        ))}
       </SimpleGrid>
     </Container>
   );
