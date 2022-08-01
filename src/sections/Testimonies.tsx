@@ -1,4 +1,4 @@
-import { Grid, SimpleGrid } from '@chakra-ui/react';
+import { Grid } from '@chakra-ui/react';
 import Container from 'components/Container';
 import Spacer from 'components/Spacer';
 import Testimony from 'components/Testimony ';
