@@ -12,7 +12,7 @@ type ContentProps = {
 const Content = ({ title, description, icon }: ContentProps) => {
   return (
     <Flex width="100%" direction="column" gap={[2]} justify="center">
-      <Text color={`${theme.colors.contrast}`} fontSize={25}>
+      <Text color={theme.colors.contrast} fontSize={25}>
         {React.createElement(icon)}
       </Text>
       <Text fontSize={theme.sizes.text.title} fontWeight="bold">

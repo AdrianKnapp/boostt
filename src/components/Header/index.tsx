@@ -7,7 +7,16 @@ const Header = () => {
   const [isMobile] = useMediaQuery(`(max-width: 768px)`);
 
   return (
-    <Flex width="100%" bg={theme.colors.contrast} py={6} mb={5}>
+    <Flex
+      width="100%"
+      bg={theme.colors.contrast}
+      py={6}
+      mb={5}
+      position="sticky"
+      zIndex={9999}
+      top={0}
+      boxShadow="0px 0px 12px 0px rgba(0,0,0,0.8)"
+    >
       <Container justify="center">
         <Text color="#1F142D" textAlign="center">
           Oferta de lançamento encerra em: {isMobile && <br />}
