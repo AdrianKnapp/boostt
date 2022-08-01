@@ -1,25 +1,26 @@
-import { SimpleGrid } from '@chakra-ui/react';
+import { Grid } from '@chakra-ui/react';
 import Container from 'components/Container';
 import Spacer from 'components/Spacer';
 import Testimony from 'components/Testimony ';
+import testimoniesData from 'mocks/testimonies';
 
 const Testimonies = () => {
   return (
     <Container direction="column">
       <Spacer>Depoimentos</Spacer>
-      <SimpleGrid
-        minChildWidth={['100px', '180px', '300px']}
-        columns={[2, 2, 3]}
-        spacing={5}
+      <Grid
+        templateColumns={['repeat(2, 1fr)', 'repeat(2, 1fr)', 'repeat(3, 1fr)']}
+        gap={[3, 3, 5]}
         width="100%"
       >
-        <Testimony />
-        <Testimony />
-        <Testimony />
-        <Testimony />
-        <Testimony />
-        <Testimony />
-      </SimpleGrid>
+        {testimoniesData.map((testimony) => (
+          <Testimony
+            key={testimony.video.src}
+            thumbnail={testimony.thumbnail}
+            video={testimony.video}
+          />
+        ))}
+      </Grid>
     </Container>
   );
 };

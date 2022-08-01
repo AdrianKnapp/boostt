@@ -8,13 +8,18 @@ import {
 } from '@chakra-ui/react';
 import { theme } from 'styles/theme';
 
-const Item = () => {
+type ItemProps = {
+  title: string;
+  description: string;
+};
+
+const Item = ({ title, description }: ItemProps) => {
   return (
     <AccordionItem border="none" bg="gray.700" borderRadius={5}>
       <Text as="h2" fontSize={theme.sizes.text.subtitle}>
         <AccordionButton px={6} py={5}>
           <Box flex="1" textAlign="left" fontWeight="semibold">
-            Como irá funcionar
+            {title}
           </Box>
           <AccordionIcon />
         </AccordionButton>
@@ -28,8 +33,7 @@ const Item = () => {
         color={theme.colors.text.secondary}
         borderRadius="0 0 5px 5px"
       >
-        It is a long established fact that a reader will be distracted by the
-        readable content of a page when looking at its layout.
+        {description}
       </AccordionPanel>
     </AccordionItem>
   );

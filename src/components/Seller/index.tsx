@@ -1,4 +1,5 @@
 import { Box, Flex, Text } from '@chakra-ui/react';
+import useCountdownTimer from 'hooks/useCountdownTimer';
 import { theme } from 'styles/theme';
 
 import Button from './Button';
@@ -9,6 +10,8 @@ type SellerProps = {
 };
 
 const Seller = ({ isPrincipal = false, isCentered = false }: SellerProps) => {
+  const { days, hours } = useCountdownTimer();
+
   const textPosition = isPrincipal || isCentered ? 'center' : 'left';
   const flexAlign = isPrincipal || isCentered ? 'center' : 'flex-start';
 
@@ -74,12 +77,12 @@ const Seller = ({ isPrincipal = false, isCentered = false }: SellerProps) => {
       >
         Disponível somente por{' '}
         <Text as="span" fontWeight="bold">
-          05 dias
+          {days} dias
         </Text>{' '}
         e
         <Text as="span" fontWeight="bold">
           {' '}
-          03 horas
+          {hours} horas
         </Text>
         .
       </Text>
