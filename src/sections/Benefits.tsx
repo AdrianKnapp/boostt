@@ -9,13 +9,22 @@ const Benefits = () => {
     <Container direction="column">
       <Spacer>Assinando hoje você garante</Spacer>
       <Flex direction="column" width="100%" gap={['80px', '100px', '50px']}>
-        {benefitsData.map((benefit) => (
-          <Benefit
-            title={benefit.title}
-            description={benefit.description}
-            icon={benefit.icon}
-            image={benefit.image}
-          />
+        {benefitsData.map(({ title, description, icon, image }) => (
+          <Flex
+            key={title}
+            _even={{ flexDirection: ['column', 'column', 'row-reverse'] }}
+            direction={['column', 'column', 'row']}
+            width="100%"
+            gap={[10, 10, 5, 0]}
+          >
+            <Benefit
+              title={title}
+              description={description}
+              icon={icon}
+              image={image}
+              key={title}
+            />
+          </Flex>
         ))}
       </Flex>
     </Container>

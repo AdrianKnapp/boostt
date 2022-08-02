@@ -1,18 +1,27 @@
 const faqData = [
   {
-    title: 'Como irá funcionar?',
-    description:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at it.',
+    title: 'O pagamento é seguro?',
+    description: 'Sim, o pagamento é feito através da Eduzz e é 100%.',
   },
   {
-    title: 'Como vai funcionar?',
+    title: 'Por que a Rocket Wins é a melhor?',
     description:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at layout.',
+      'Porque ela é validada e proporciona lucro para milhares de pessoas espalhadas pelo Brasil. Justamente por isso, ela é a única capaz de te proporcionar os melhores resultados.',
   },
   {
-    title: 'Como funcionará?',
+    title: 'Quais as formas de pagamento?',
     description:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at it layout.',
+      'Em até 12x no cartão de crédito, ou no PIX ou boleto à vista.',
+  },
+  {
+    title: 'Ao comprar, vou ter garantia?',
+    description:
+      'Sim! Nós confiamos tanto no nosso produto que iremos te dar 7 dias de garantia para você testá-lo.',
+  },
+  {
+    title: 'A Rocket Wins funciona pelo celular?',
+    description:
+      'Sim! Ela foi desenvolvida para funcionar no celular, e no desktop.',
   },
 ];
 

@@ -20,7 +20,10 @@ const Seller = ({ isPrincipal = false, isCentered = false }: SellerProps) => {
   const getTitle = () =>
     isPrincipal ? (
       <Text fontSize={titleFontSize} fontWeight="bold" textAlign={textPosition}>
-        Tornete-se um boostter exclusivo e obtenha retornos expressivos.
+        Faça parte da nossa comunidade exclusiva e
+        <Text as="span" ml={2} color={theme.colors.highlight}>
+          obtenha retornos expressivos
+        </Text>
       </Text>
     ) : (
       <Text fontSize={titleFontSize} fontWeight="bold" textAlign={textPosition}>
@@ -38,9 +41,9 @@ const Seller = ({ isPrincipal = false, isCentered = false }: SellerProps) => {
         fontSize={theme.sizes.text.description}
         color={theme.colors.text.secondary}
       >
-        Assinatura trimestral de{' '}
+        Assinatura mensal de{' '}
         <Text as="span" textDecoration="line-through">
-          R$ 314,90
+          R$ 297,90
         </Text>{' '}
         por
       </Text>
@@ -92,7 +95,7 @@ const Seller = ({ isPrincipal = false, isCentered = false }: SellerProps) => {
         color={theme.colors.text.secondary}
       >
         <Text as="span" color={theme.colors.contrast} mr={1}>
-          Plano trimestral
+          Plano mensal
         </Text>
         por apenas 149,90 R$
       </Text>
