@@ -24,7 +24,7 @@ const Faq = () => {
             FAQ
           </Text>
           <Text fontWeight="bold" fontSize={theme.sizes.text.title} maxW={400}>
-            Tudo que você precisa saber sobre o Boostt
+            Tudo que você precisa saber sobre a Rocket Wins
           </Text>
           <Button />
         </Flex>

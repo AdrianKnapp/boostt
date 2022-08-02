@@ -3,9 +3,8 @@ import { BsGraphUp } from 'react-icons/bs';
 const benefitsData = [
   {
     icon: BsGraphUp,
-    title: 'Tenha resultados expressivos, acesso a X salas e 30 tips semanais',
-    description:
-      'Tenha acesso a X salas exclusivas, com métodos internacionais extremamente lucrativos.',
+    title: 'Faça uma renda extra usando apenas o celular',
+    description: 'Lucre com o mercado mais rápido e lucrativo da atualidade.',
     image: {
       src: 'https://images.unsplash.com/photo-1593672715438-d88a70629abe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
       alt: '',
@@ -13,9 +12,9 @@ const benefitsData = [
   },
   {
     icon: BsGraphUp,
-    title: 'Tenha resultados expressivos, acesso a X salas e 30 tips semanais',
+    title: 'Treinamento especial',
     description:
-      'Tenha acesso a X salas exclusivas, com métodos internacionais extremamente lucrativos.',
+      'Aprenda o passo a passo de como investir da forma mais eficiente.',
     image: {
       src: 'https://images.unsplash.com/photo-1593672715438-d88a70629abe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
       alt: '',
@@ -23,9 +22,9 @@ const benefitsData = [
   },
   {
     icon: BsGraphUp,
-    title: 'Tenha resultados expressivos, acesso a X salas e 30 tips semanais',
+    title: 'Controle emocial',
     description:
-      'Tenha acesso a X salas exclusivas, com métodos internacionais extremamente lucrativos.',
+      'Aprenda a ter controle emocional e como gerir sua banca corretamente.',
     image: {
       src: 'https://images.unsplash.com/photo-1593672715438-d88a70629abe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
       alt: '',

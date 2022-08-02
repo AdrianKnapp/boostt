@@ -24,7 +24,7 @@ const Footer = () => {
             color={theme.colors.text.secondary}
             fontSize={theme.sizes.text.description}
           >
-            Boostt - Todos os direitos reservados.
+            Rocket Wins - Todos os direitos reservados.
           </Text>
         </Container>
       </Flex>
