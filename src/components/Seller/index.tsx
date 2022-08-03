@@ -27,11 +27,7 @@ const Seller = ({ isPrincipal = false, isCentered = false }: SellerProps) => {
       </Text>
     ) : (
       <Text fontSize={titleFontSize} fontWeight="bold" textAlign={textPosition}>
-        Torne-se
-        <Text as="span" ml={2} color={theme.colors.highlight}>
-          gigante
-        </Text>
-        <br /> com a gente.
+        O robô com maior assertividade do mercado.
       </Text>
     );
 
@@ -49,7 +45,7 @@ const Seller = ({ isPrincipal = false, isCentered = false }: SellerProps) => {
       </Text>
     ) : (
       <Text fontSize={theme.sizes.text.description}>
-        Comece antes de todo mundo!
+        Inteligência artificial com maior taxa de acertos.
       </Text>
     );
 
@@ -102,8 +98,8 @@ const Seller = ({ isPrincipal = false, isCentered = false }: SellerProps) => {
     );
 
   return (
-    <Flex w="100%" direction="column" gap={2} align={flexAlign} py={12}>
-      <Box
+    <Flex w="100%" direction="column" gap={2} align={flexAlign}>
+      {/* <Box
         px={2}
         py={1}
         borderRadius={5}
@@ -112,7 +108,7 @@ const Seller = ({ isPrincipal = false, isCentered = false }: SellerProps) => {
         w="min-content"
       >
         Lançamento
-      </Box>
+      </Box> */}
       {getTitle()}
       {getSubtitle()}
       {getPrice()}

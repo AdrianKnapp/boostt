@@ -57,7 +57,7 @@ export const chakraTheme = extendTheme({
       700: '#c7fc95',
     },
     purple: {
-      600: '#BF99F2', // secondary highlight
+      600: '#d941c7', // secondary highlight
     },
   },
   fonts: {
@@ -73,3 +73,5 @@ export const chakraTheme = extendTheme({
     },
   },
 });
+
+// #d941c7
