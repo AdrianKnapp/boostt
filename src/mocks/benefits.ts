@@ -1,8 +1,10 @@
-import { BsGraphUp } from 'react-icons/bs';
+import { BiHappy } from 'react-icons/bi';
+import { FaMoneyBill } from 'react-icons/fa';
+import { VscWorkspaceTrusted } from 'react-icons/vsc';
 
 const benefitsData = [
   {
-    icon: BsGraphUp,
+    icon: FaMoneyBill,
     title: 'Faça uma renda extra usando apenas o celular',
     description: 'Lucre com o mercado mais rápido e lucrativo da atualidade.',
     image: {
@@ -11,7 +13,7 @@ const benefitsData = [
     },
   },
   {
-    icon: BsGraphUp,
+    icon: VscWorkspaceTrusted,
     title: 'Treinamento especial',
     description:
       'Aprenda o passo a passo de como investir da forma mais eficiente.',
@@ -21,7 +23,7 @@ const benefitsData = [
     },
   },
   {
-    icon: BsGraphUp,
+    icon: BiHappy,
     title: 'Controle emocial',
     description:
       'Aprenda a ter controle emocional e como gerir sua banca corretamente.',

@@ -8,6 +8,8 @@ const Header = () => {
   const [isMobile] = useMediaQuery(`(max-width: 768px)`);
   const { days, hours, minutes } = useCountdownTimer();
 
+  const countDownColor = theme.colors.highlight;
+
   return (
     <Flex
       width="100%"
@@ -21,20 +23,22 @@ const Header = () => {
     >
       <Container justify="center">
         <Text
-          color="#1F142D"
+          color="#471541"
           textAlign="center"
           fontSize={theme.sizes.text.description}
+          letterSpacing={0.8}
+          fontWeight="medium"
         >
           Oferta de lançamento encerra em: {isMobile && <br />}
-          <Text fontWeight="bold" as="span" color={theme.colors.highlight}>
+          <Text fontWeight="bold" as="span" color={countDownColor}>
             {days}
           </Text>{' '}
           DIAS{' '}
-          <Text fontWeight="bold" as="span" color={theme.colors.highlight}>
+          <Text fontWeight="bold" as="span" color={countDownColor}>
             {hours}
           </Text>{' '}
           HORAS{' '}
-          <Text fontWeight="bold" as="span" color={theme.colors.highlight}>
+          <Text fontWeight="bold" as="span" color={countDownColor}>
             {minutes}
           </Text>{' '}
           MIN
