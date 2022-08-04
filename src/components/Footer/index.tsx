@@ -6,8 +6,8 @@ import { theme } from 'styles/theme';
 const Footer = () => {
   return (
     <>
-      <Container mt="150px" mb={8} justify="center">
-        <Box width={600} opacity={0.2}>
+      <Container mt="120px" mb={8} justify="center">
+        <Box width={500} opacity={0.2}>
           <Image
             src="/images/compra-segura.svg"
             alt="Compra segura"
@@ -16,13 +16,13 @@ const Footer = () => {
           />
         </Box>
       </Container>
-      <Flex bg="gray.800" py={4}>
+      <Flex bg="gray.800" py={2}>
         <Container>
           <Text
             width="100%"
             textAlign="center"
             color={theme.colors.text.secondary}
-            fontSize={theme.sizes.text.description}
+            fontSize="sm"
           >
             Rocket Wins - Todos os direitos reservados.
           </Text>
