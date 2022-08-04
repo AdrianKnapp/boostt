@@ -44,7 +44,7 @@ const Seller = ({ isPrincipal = false, isCentered = false }: SellerProps) => {
         por
       </Text>
     ) : (
-      <Text fontSize={theme.sizes.text.description}>
+      <Text fontSize={theme.sizes.text.description} textAlign={textPosition}>
         Inteligência artificial que te proporciona lucros expressivos de forma
         100% automática.
       </Text>

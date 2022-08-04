@@ -18,6 +18,11 @@ const Carousel = () => {
         pagination={{ clickable: true, dynamicBullets: true }}
         modules={[Pagination]}
         className="mySwiper"
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        centeredSlides
       >
         {carouselData.images.map((item) => (
           <SwiperSlide style={{ height: '95%', margin: 'auto' }} key={item.alt}>

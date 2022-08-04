@@ -23,7 +23,7 @@ const Header = () => {
     >
       <Container justify="center">
         <Text
-          color="#471541"
+          color="#180316"
           textAlign="center"
           fontSize={theme.sizes.text.description}
           letterSpacing={0.8}

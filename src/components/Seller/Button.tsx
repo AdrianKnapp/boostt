@@ -1,7 +1,11 @@
 import { Button as ChakraButton } from '@chakra-ui/react';
 import { theme } from 'styles/theme';
 
-const Button = () => {
+type ButtonProps = {
+  children?: React.ReactNode;
+};
+
+const Button = ({ children }: ButtonProps) => {
   return (
     <ChakraButton
       bg={theme.colors.highlight}
@@ -17,7 +21,7 @@ const Button = () => {
         opacity: 1,
       }}
     >
-      ASSINAR AGORA
+      {children || 'ASSINAR AGORA'}
     </ChakraButton>
   );
 };
