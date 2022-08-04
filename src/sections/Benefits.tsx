@@ -7,7 +7,7 @@ import benefitsData from 'mocks/benefits';
 const Benefits = () => {
   return (
     <Container direction="column">
-      <Spacer>Assinando hoje você garante</Spacer>
+      <Spacer>O que é essa tecnologia?</Spacer>
       <Flex direction="column" width="100%" gap={['80px', '100px', '50px']}>
         {benefitsData.map(({ title, description, icon, image }) => (
           <Flex
