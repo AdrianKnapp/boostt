@@ -45,7 +45,8 @@ const Seller = ({ isPrincipal = false, isCentered = false }: SellerProps) => {
       </Text>
     ) : (
       <Text fontSize={theme.sizes.text.description}>
-        Inteligência artificial com maior taxa de acertos.
+        Inteligência artificial que te proporciona lucros expressivos de forma
+        100% automática.
       </Text>
     );
 
@@ -61,7 +62,7 @@ const Seller = ({ isPrincipal = false, isCentered = false }: SellerProps) => {
           fontSize={theme.sizes.text.title}
           fontWeight="bold"
         >
-          149,90
+          159,90
         </Text>{' '}
         / mês
       </Text>
@@ -93,7 +94,7 @@ const Seller = ({ isPrincipal = false, isCentered = false }: SellerProps) => {
         <Text as="span" color={theme.colors.contrast} mr={1}>
           Plano mensal
         </Text>
-        por apenas 149,90 R$
+        por apenas 159,90 R$
       </Text>
     );
 
