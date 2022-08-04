@@ -12,7 +12,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
 
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="shortcut icon" href="/favicon.png" type="image/png" />
 
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
