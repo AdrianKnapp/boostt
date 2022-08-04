@@ -1,4 +1,5 @@
 import Footer from 'components/Footer';
+import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import Banner from 'sections/Banner';
 import Benefits from 'sections/Benefits';
@@ -27,3 +28,10 @@ const Home = () => {
 };
 
 export default Home;
+
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {},
+    revalidate: 60, // 60 seconds
+  };
+};

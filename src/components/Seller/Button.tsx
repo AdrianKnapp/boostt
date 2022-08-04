@@ -1,8 +1,15 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Button as ChakraButton } from '@chakra-ui/react';
+import Link from 'next/link';
 import { theme } from 'styles/theme';
 
-const Button = () => {
-  return (
+type ButtonProps = {
+  linkable?: boolean;
+  children?: React.ReactNode;
+};
+
+const Button = ({ children, linkable = true }: ButtonProps) => {
+  const button = (
     <ChakraButton
       bg={theme.colors.highlight}
       color={theme.colors.background}
@@ -17,8 +24,16 @@ const Button = () => {
         opacity: 1,
       }}
     >
-      ASSINAR AGORA
+      {children || 'ASSINAR AGORA'}
     </ChakraButton>
+  );
+
+  return linkable ? (
+    <Link href="/#" passHref>
+      <a>{button}</a>
+    </Link>
+  ) : (
+    button
   );
 };
 

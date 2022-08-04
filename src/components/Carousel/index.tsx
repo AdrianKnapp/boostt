@@ -1,5 +1,6 @@
 import { Flex } from '@chakra-ui/react';
-import { Pagination } from 'swiper';
+import carouselData from 'mocks/carousel';
+import { Pagination, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Item from './Item';
@@ -15,18 +16,19 @@ const Carousel = () => {
     >
       <Swiper
         pagination={{ clickable: true, dynamicBullets: true }}
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         className="mySwiper"
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        centeredSlides
       >
-        <SwiperSlide style={{ height: '95%', margin: 'auto' }}>
-          <Item />
-        </SwiperSlide>
-        <SwiperSlide style={{ height: '95%', margin: 'auto' }}>
-          <Item />
-        </SwiperSlide>
-        <SwiperSlide style={{ height: '95%', margin: 'auto' }}>
-          <Item />
-        </SwiperSlide>
+        {carouselData.images.map((item) => (
+          <SwiperSlide style={{ height: '95%', margin: 'auto' }} key={item.alt}>
+            <Item src={item.src} alt={item.alt} />
+          </SwiperSlide>
+        ))}
       </Swiper>
       <Flex
         position="absolute"
