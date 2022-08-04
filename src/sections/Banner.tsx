@@ -23,6 +23,7 @@ const Banner = () => {
               alt="Logo"
               layout="fill"
               objectFit="contain"
+              priority
             />
           </Box>
         </Flex>

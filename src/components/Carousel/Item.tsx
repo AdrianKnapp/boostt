@@ -10,7 +10,7 @@ const Item = ({ src, alt }: ItemProps) => {
   return (
     <Flex>
       <Box height="100%" width={300}>
-        <Image src={src} alt={alt} layout="fill" objectFit="contain" />
+        <Image src={src} alt={alt} layout="fill" objectFit="contain" priority />
       </Box>
     </Flex>
   );

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Button as ChakraButton } from '@chakra-ui/react';
 import Link from 'next/link';
 import { theme } from 'styles/theme';
@@ -27,7 +28,13 @@ const Button = ({ children, linkable = true }: ButtonProps) => {
     </ChakraButton>
   );
 
-  return linkable ? <Link href="/#">{button}</Link> : button;
+  return linkable ? (
+    <Link href="/#" passHref>
+      <a>{button}</a>
+    </Link>
+  ) : (
+    button
+  );
 };
 
 export default Button;
