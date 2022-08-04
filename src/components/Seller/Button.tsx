@@ -1,12 +1,14 @@
 import { Button as ChakraButton } from '@chakra-ui/react';
+import Link from 'next/link';
 import { theme } from 'styles/theme';
 
 type ButtonProps = {
+  linkable?: boolean;
   children?: React.ReactNode;
 };
 
-const Button = ({ children }: ButtonProps) => {
-  return (
+const Button = ({ children, linkable = true }: ButtonProps) => {
+  const button = (
     <ChakraButton
       bg={theme.colors.highlight}
       color={theme.colors.background}
@@ -24,6 +26,8 @@ const Button = ({ children }: ButtonProps) => {
       {children || 'ASSINAR AGORA'}
     </ChakraButton>
   );
+
+  return linkable ? <Link href="/#">{button}</Link> : button;
 };
 
 export default Button;

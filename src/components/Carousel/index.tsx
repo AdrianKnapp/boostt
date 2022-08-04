@@ -1,6 +1,6 @@
 import { Flex } from '@chakra-ui/react';
 import carouselData from 'mocks/carousel';
-import { Pagination } from 'swiper';
+import { Pagination, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Item from './Item';
@@ -16,10 +16,10 @@ const Carousel = () => {
     >
       <Swiper
         pagination={{ clickable: true, dynamicBullets: true }}
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         className="mySwiper"
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         centeredSlides

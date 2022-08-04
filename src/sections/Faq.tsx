@@ -34,7 +34,7 @@ const Faq = () => {
             offset={-40}
             duration={600}
           >
-            <Button>VEJA MAIS</Button>
+            <Button linkable={false}>VEJA MAIS</Button>
           </ScrollLink>
         </Flex>
         <Accordion />
