@@ -1,5 +1,6 @@
-import { BiHappy } from 'react-icons/bi';
+import { AiOutlineFieldTime } from 'react-icons/ai';
 import { FaMoneyBill } from 'react-icons/fa';
+import { MdOutlineWhatshot } from 'react-icons/md';
 import { VscWorkspaceTrusted } from 'react-icons/vsc';
 
 const benefitsData = [
@@ -24,7 +25,7 @@ const benefitsData = [
     },
   },
   {
-    icon: BiHappy,
+    icon: AiOutlineFieldTime,
     title: 'Funcionamento em tempo integral',
     description:
       'Uma vez ativada, nossa inteligencia é capaz de operar 24h por dia, 7 dias por semana através de sinais oportunos.',
@@ -34,7 +35,7 @@ const benefitsData = [
     },
   },
   {
-    icon: BiHappy,
+    icon: MdOutlineWhatshot,
     title: 'Lançamento exclusivo',
     description:
       'Tenha acesso a tecnologia mais atual e inovadora do mercado, recém chegada no Brasil.',

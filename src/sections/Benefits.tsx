@@ -8,7 +8,7 @@ const Benefits = () => {
   return (
     <Container direction="column">
       <Spacer>O que é essa tecnologia?</Spacer>
-      <Flex direction="column" width="100%" gap={['80px', '100px', '50px']}>
+      <Flex direction="column" width="100%" gap={['80px', '100px', '80px']}>
         {benefitsData.map(({ title, description, icon, image }) => (
           <Flex
             key={title}
