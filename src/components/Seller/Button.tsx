@@ -29,7 +29,7 @@ const Button = ({ children, linkable = true }: ButtonProps) => {
   );
 
   return linkable ? (
-    <Link href="/#" passHref>
+    <Link href={process.env.NEXT_PUBLIC_SELLER_LINK} passHref>
       <a>{button}</a>
     </Link>
   ) : (

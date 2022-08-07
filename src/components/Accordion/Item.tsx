@@ -16,9 +16,14 @@ type ItemProps = {
 const Item = ({ title, description }: ItemProps) => {
   return (
     <AccordionItem border="none" bg="gray.700" borderRadius={5}>
-      <Text as="h2" fontSize={theme.sizes.text.subtitle}>
+      <Text as="h2">
         <AccordionButton px={6} py={5}>
-          <Box flex="1" textAlign="left" fontWeight="semibold">
+          <Box
+            flex="1"
+            textAlign="left"
+            fontWeight="semibold"
+            fontSize={theme.sizes.text.description}
+          >
             {title}
           </Box>
           <AccordionIcon />
@@ -29,7 +34,7 @@ const Item = ({ title, description }: ItemProps) => {
         bg="gray.800"
         px={6}
         py={4}
-        fontSize={theme.sizes.text.description}
+        fontSize={+theme.sizes.text.description - 2}
         color={theme.colors.text.secondary}
         borderRadius="0 0 5px 5px"
       >

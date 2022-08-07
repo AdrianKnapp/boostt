@@ -1,5 +1,6 @@
-import { BiHappy } from 'react-icons/bi';
+import { AiOutlineFieldTime } from 'react-icons/ai';
 import { FaMoneyBill } from 'react-icons/fa';
+import { MdOutlineWhatshot } from 'react-icons/md';
 import { VscWorkspaceTrusted } from 'react-icons/vsc';
 
 const benefitsData = [
@@ -9,8 +10,8 @@ const benefitsData = [
     description:
       'Desenvolvida por profissionais, para indentificar padrões de apostas capazes de alcançar lucros constantes e previsiveis.',
     image: {
-      src: 'https://images.unsplash.com/photo-1593672715438-d88a70629abe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-      alt: '',
+      src: 'robo.svg',
+      alt: 'Robô de tecnologia estrangeira.',
     },
   },
   {
@@ -19,27 +20,27 @@ const benefitsData = [
     description:
       'Não requerindo qualquer tipo de conhecimento na área, sendo capaz de atender do leigo ao avançado.',
     image: {
-      src: 'https://images.unsplash.com/photo-1593672715438-d88a70629abe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
+      src: 'easy.svg',
       alt: '',
     },
   },
   {
-    icon: BiHappy,
+    icon: AiOutlineFieldTime,
     title: 'Funcionamento em tempo integral',
     description:
       'Uma vez ativada, nossa inteligencia é capaz de operar 24h por dia, 7 dias por semana através de sinais oportunos.',
     image: {
-      src: 'https://images.unsplash.com/photo-1593672715438-d88a70629abe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
+      src: 'clock.svg',
       alt: '',
     },
   },
   {
-    icon: BiHappy,
+    icon: MdOutlineWhatshot,
     title: 'Lançamento exclusivo',
     description:
       'Tenha acesso a tecnologia mais atual e inovadora do mercado, recém chegada no Brasil.',
     image: {
-      src: 'https://images.unsplash.com/photo-1593672715438-d88a70629abe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
+      src: 'exclusive.svg',
       alt: '',
     },
   },

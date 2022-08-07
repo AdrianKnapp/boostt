@@ -7,16 +7,17 @@ const Image = ({ image }: { image: ImageProps }) => {
     <Flex width="100%" justify="center">
       <Box
         position="relative"
-        width={['80%']}
-        height={[200, 350, 350, 400]}
+        width={['40%']}
+        height={[120, 200, 200, 250]}
         borderRadius={5}
         overflow="hidden"
+        filter="brightness(0) invert(1)"
       >
         <NextImage
-          src={image.src}
+          src={`/images/benefits/${image.src}`}
           alt={image.alt}
           layout="fill"
-          objectFit="cover"
+          objectFit="contain"
         />
       </Box>
     </Flex>
