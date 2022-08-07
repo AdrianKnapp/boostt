@@ -11,7 +11,7 @@ const Image = ({ image }: { image: ImageProps }) => {
         height={[200, 350, 350, 400]}
         borderRadius={5}
         overflow="hidden"
-        // filter="brightness(0) invert(1)"
+        filter="brightness(0) invert(1)"
       >
         <NextImage
           src={`/images/benefits/${image.src}`}
