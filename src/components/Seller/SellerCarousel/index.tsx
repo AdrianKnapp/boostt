@@ -26,7 +26,7 @@ const SellerCarousel = () => {
         spaceBetween={20}
         breakpoints={{
           768: {
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 20,
           },
         }}
@@ -38,8 +38,15 @@ const SellerCarousel = () => {
             subtitle="Para investidores conservadores"
             highPrice="223,86"
             discount="40%"
-            lowPrice="159,90"
-            description={['Acesso ao robô e ao minicurso', 'Pagamento mensal']}
+            price="159,90"
+            description={[
+              'Pagamento mensal',
+              'Acesso ao robô lucrativo',
+              'Acesso ao minicurso',
+              'Suporte 24 horas',
+              'Lucre por 1 mês',
+              '7 dias de garantia',
+            ]}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -48,14 +55,37 @@ const SellerCarousel = () => {
             subtitle="Para investidores ambiciosos"
             highPrice="335,86"
             discount="40%"
-            lowPrice="239,90"
+            price="239,90"
             description={[
-              'Acesso ao robô e ao minicurso',
-              '40% off',
-              'Pagamento de 3 em 3 meses',
+              'Pagamento a cada 3 meses',
+              'Acesso ao robô lucrativo',
+              'Acesso ao minicurso',
+              'Suporte 24 horas',
+              'Lista vip para novos jogos',
+              'Grupo vip no telegram',
+              '7 dias de garantia',
             ]}
             isPrincipal
             monthlyPrice="79,90/mês*"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Item
+            title="Assinatura trimestral"
+            subtitle="Para investidores ambiciosos"
+            highPrice="704,85"
+            discount="50%"
+            price="469,90"
+            description={[
+              'Pagamento a cada 6 meses',
+              'Acesso ao robô lucrativo',
+              'Acesso ao minicurso',
+              'Suporte 24 horas',
+              'Lista vip para novos jogos',
+              'Grupo vip no telegram',
+              '7 dias de garantia',
+            ]}
+            monthlyPrice="78,0/mês*"
           />
         </SwiperSlide>
       </Swiper>
