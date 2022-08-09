@@ -8,7 +8,7 @@ const SellerCarousel = () => {
   return (
     <Flex
       w="100%"
-      minH="60vh"
+      minH="430px"
       borderRadius={5}
       position="relative"
       overflow="hidden"
@@ -32,10 +32,30 @@ const SellerCarousel = () => {
         navigation
       >
         <SwiperSlide>
-          <Item />
+          <Item
+            title="Assinatura mensal"
+            subtitle="Para investidores conservadores"
+            highPrice="223,86"
+            discount="40%"
+            lowPrice="159,90"
+            description={['Acesso ao robô e ao minicurso', 'Pagamento mensal']}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Item />
+          <Item
+            title="Assinatura trimestral"
+            subtitle="Para investidores ambiciosos"
+            highPrice="335,86"
+            discount="40%"
+            lowPrice="239,90"
+            description={[
+              'Acesso ao robô e ao minicurso',
+              '40% off',
+              'Pagamento de 3 em 3 meses',
+            ]}
+            isPrincipal
+            monthlyPrice="79,90/mês*"
+          />
         </SwiperSlide>
       </Swiper>
     </Flex>

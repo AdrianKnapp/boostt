@@ -6,6 +6,7 @@
 
 html {
   height: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 
 @media (max-width: 1080px) {
@@ -59,6 +60,7 @@ a {
   &::after {
     font-size: 20px;
     color: #FFFFFF;
+    font-weight: bold;
   }
 }
 
@@ -79,5 +81,11 @@ a {
 }
 
 .seller-swiper {
-  padding-bottom: 60px;
+  padding-bottom: 0;
+}
+
+.seller-swiper {
+  .swiper-pagination-bullet {
+    margin: 0 10px !important;
+  }
 }

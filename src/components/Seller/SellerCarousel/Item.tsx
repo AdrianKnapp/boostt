@@ -5,9 +5,25 @@ import Button from '../Button';
 
 type ItemProps = {
   isPrincipal?: boolean;
+  title: string;
+  subtitle: string;
+  highPrice: string;
+  lowPrice: string;
+  discount: string;
+  description: string[];
+  monthlyPrice?: string;
 };
 
-const Item = ({ isPrincipal = true }: ItemProps) => {
+const Item = ({
+  isPrincipal = false,
+  title,
+  subtitle,
+  discount,
+  highPrice,
+  lowPrice,
+  description,
+  monthlyPrice = '',
+}: ItemProps) => {
   return (
     <Flex
       width="100%"
@@ -27,44 +43,68 @@ const Item = ({ isPrincipal = true }: ItemProps) => {
           fontSize={theme.sizes.text.subtitle}
           fontWeight="bold"
         >
-          Assinatura mensal
+          {title}
         </Text>
         <Text
           textAlign="center"
           fontSize={theme.sizes.text.description}
           color={theme.colors.text.secondary}
         >
-          Para investidores conservadores
+          {subtitle}
         </Text>
       </Flex>
       <Flex direction="column" w="100%" gap={2}>
-        <Flex
-          w="100%"
-          justify="center"
-          align="center"
-          gap={2}
-          fontSize={theme.sizes.text.description}
-        >
-          <Text>R$ 223,86</Text>
-          <Text bg={theme.colors.contrast} p={1}>
-            40% OFF
+        {isPrincipal && (
+          <Flex
+            w="100%"
+            justify="center"
+            align="center"
+            gap={2}
+            fontSize={theme.sizes.text.description}
+          >
+            <Text
+              textDecoration="line-through"
+              color={theme.colors.text.secondary}
+            >
+              R$ {highPrice}
+            </Text>
+            <Text bg={theme.colors.contrast} p="2px 5px">
+              {discount} OFF
+            </Text>
+          </Flex>
+        )}
+        {isPrincipal ? (
+          <>
+            <Flex color={theme.colors.text.secondary} gap={2} justify="center">
+              <Text fontWeight="bold">R$ {lowPrice}</Text>
+              <Text>equivalente a</Text>
+            </Flex>
+            <Text
+              textAlign="center"
+              fontSize={theme.sizes.text.title}
+              fontWeight="bold"
+            >
+              R$ {monthlyPrice}
+            </Text>
+          </>
+        ) : (
+          <Text
+            textAlign="center"
+            fontSize={theme.sizes.text.title}
+            fontWeight="bold"
+          >
+            R$ {lowPrice}
           </Text>
-        </Flex>
-        <Text
-          textAlign="center"
-          fontSize={theme.sizes.text.subtitle}
-          fontWeight="bold"
-        >
-          R$ 159,90
-        </Text>
+        )}
       </Flex>
       <Flex justify="center">
         <Button />
       </Flex>
       <Flex justify="center">
         <UnorderedList fontSize={theme.sizes.text.description}>
-          <ListItem>Acesso ao robô e ao minicurso</ListItem>
-          <ListItem>Pagamento mensal</ListItem>
+          {description.map((item) => (
+            <ListItem key={item}>{item}</ListItem>
+          ))}
         </UnorderedList>
       </Flex>
     </Flex>
