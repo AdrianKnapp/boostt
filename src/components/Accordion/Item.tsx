@@ -34,7 +34,7 @@ const Item = ({ title, description }: ItemProps) => {
         bg="gray.800"
         px={6}
         py={4}
-        fontSize={+theme.sizes.text.description - 2}
+        fontSize={theme.sizes.text.description}
         color={theme.colors.text.secondary}
         borderRadius="0 0 5px 5px"
       >

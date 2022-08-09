@@ -1,4 +1,4 @@
-import { Box, Flex, Text } from '@chakra-ui/react';
+import { Flex, Text } from '@chakra-ui/react';
 import useCountdownTimer from 'hooks/useCountdownTimer';
 import { theme } from 'styles/theme';
 
@@ -15,7 +15,7 @@ const Seller = ({ isPrincipal = false, isCentered = false }: SellerProps) => {
   const textPosition = isPrincipal || isCentered ? 'center' : 'left';
   const flexAlign = isPrincipal || isCentered ? 'center' : 'flex-start';
 
-  const titleFontSize = [25, null, 40];
+  const titleFontSize = [25, null, 30];
 
   const getTitle = () =>
     isPrincipal ? (
@@ -27,7 +27,11 @@ const Seller = ({ isPrincipal = false, isCentered = false }: SellerProps) => {
       </Text>
     ) : (
       <Text fontSize={titleFontSize} fontWeight="bold" textAlign={textPosition}>
-        O robô com maior assertividade do mercado.
+        O robô com{' '}
+        <Text as="span" color={theme.colors.highlight}>
+          maior assertividade
+        </Text>{' '}
+        <br /> do mercado.
       </Text>
     );
 
