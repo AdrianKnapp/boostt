@@ -15,6 +15,7 @@ const Carousel = () => {
       overflow="hidden"
     >
       <Swiper
+        speed={400}
         pagination={{ clickable: true, dynamicBullets: true }}
         modules={[Pagination, Autoplay]}
         className="mySwiper"

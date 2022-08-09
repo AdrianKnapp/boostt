@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Button as ChakraButton } from '@chakra-ui/react';
 import Link from 'next/link';
+import { Link as ScrollLink } from 'react-scroll';
 import { theme } from 'styles/theme';
 
 type ButtonProps = {
@@ -8,7 +9,7 @@ type ButtonProps = {
   children?: React.ReactNode;
 };
 
-const Button = ({ children, linkable = true }: ButtonProps) => {
+const Button = ({ children, linkable = false }: ButtonProps) => {
   const button = (
     <ChakraButton
       bg={theme.colors.highlight}
@@ -33,7 +34,9 @@ const Button = ({ children, linkable = true }: ButtonProps) => {
       <a>{button}</a>
     </Link>
   ) : (
-    button
+    <ScrollLink to="seller-principal" spy smooth offset={-20} duration={1000}>
+      {button}
+    </ScrollLink>
   );
 };
 

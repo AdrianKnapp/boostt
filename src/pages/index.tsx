@@ -5,7 +5,6 @@ import Banner from 'sections/Banner';
 import Benefits from 'sections/Benefits';
 import Faq from 'sections/Faq';
 import Sell from 'sections/Sell';
-import Testimonies from 'sections/Testimonies';
 
 const Home = () => {
   return (
@@ -19,7 +18,6 @@ const Home = () => {
       </Head>
       <Banner />
       <Benefits />
-      <Testimonies />
       <Faq />
       <Sell />
       <Footer />

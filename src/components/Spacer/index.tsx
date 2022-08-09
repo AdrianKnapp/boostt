@@ -1,5 +1,5 @@
 import { Box, Flex, Text } from '@chakra-ui/react';
-import { BiDollar } from 'react-icons/bi';
+import { AiOutlineDollar } from 'react-icons/ai';
 import { theme } from 'styles/theme';
 
 type SpacerProps = {
@@ -12,7 +12,7 @@ const Spacer = ({ children, hideTitle = false }: SpacerProps) => {
     <Text
       fontSize={theme.sizes.text.title}
       fontWeight="bold"
-      maxW={300}
+      maxW={400}
       textAlign="center"
       mt={8}
     >
@@ -23,7 +23,7 @@ const Spacer = ({ children, hideTitle = false }: SpacerProps) => {
   return (
     <Flex w="100%" mt={16} mb={16} direction="column" align="center">
       <Box>
-        <BiDollar fontSize={25} opacity={0.2} />
+        <AiOutlineDollar fontSize={25} opacity={0.2} />
       </Box>
       {getTitle}
     </Flex>

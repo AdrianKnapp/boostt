@@ -12,9 +12,9 @@ export const theme = {
   },
   sizes: {
     text: {
-      title: [18, 24, 30],
-      subtitle: [16, 18, 24],
-      description: [14, 16, 18],
+      title: [18, 24, 26],
+      subtitle: [16, 18, 20],
+      description: [12, 14, 16],
     },
   },
   container: {

@@ -6,7 +6,7 @@ import { theme } from 'styles/theme';
 const Footer = () => {
   return (
     <>
-      <Container mt="120px" mb={8} justify="center">
+      <Container mt="60px" mb={4} justify="center">
         <Box width={500} opacity={0.2}>
           <Image
             src="/images/compra-segura.svg"
