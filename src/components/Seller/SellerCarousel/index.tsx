@@ -14,6 +14,7 @@ const SellerCarousel = () => {
       overflow="hidden"
     >
       <Swiper
+        speed={400}
         slidesPerView={1}
         pagination={{ clickable: true, dynamicBullets: false }}
         modules={[Pagination, Autoplay, Navigation]}

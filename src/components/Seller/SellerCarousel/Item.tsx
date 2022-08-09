@@ -54,25 +54,23 @@ const Item = ({
         </Text>
       </Flex>
       <Flex direction="column" w="100%" gap={2}>
-        {isPrincipal && (
-          <Flex
-            w="100%"
-            justify="center"
-            align="center"
-            gap={2}
-            fontSize={theme.sizes.text.description}
+        <Flex
+          w="100%"
+          justify="center"
+          align="center"
+          gap={2}
+          fontSize={theme.sizes.text.description}
+        >
+          <Text
+            textDecoration="line-through"
+            color={theme.colors.text.secondary}
           >
-            <Text
-              textDecoration="line-through"
-              color={theme.colors.text.secondary}
-            >
-              R$ {highPrice}
-            </Text>
-            <Text bg={theme.colors.contrast} p="2px 5px">
-              {discount} OFF
-            </Text>
-          </Flex>
-        )}
+            R$ {highPrice}
+          </Text>
+          <Text bg={theme.colors.contrast} p="2px 5px">
+            {discount} OFF
+          </Text>
+        </Flex>
         {isPrincipal ? (
           <>
             <Flex color={theme.colors.text.secondary} gap={2} justify="center">
