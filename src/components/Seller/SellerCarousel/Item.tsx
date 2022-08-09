@@ -96,7 +96,7 @@ const Item = ({
         )}
       </Flex>
       <Flex justify="center">
-        <Button />
+        <Button linkable />
       </Flex>
       <Flex justify="center">
         <UnorderedList fontSize={theme.sizes.text.description}>

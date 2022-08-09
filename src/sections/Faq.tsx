@@ -3,7 +3,6 @@ import Accordion from 'components/Accordion';
 import Container from 'components/Container';
 import Button from 'components/Seller/Button';
 import Spacer from 'components/Spacer';
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import { theme } from 'styles/theme';
 
 const Faq = () => {
@@ -27,15 +26,7 @@ const Faq = () => {
           <Text fontWeight="bold" fontSize={theme.sizes.text.title} maxW={400}>
             Tudo que você precisa saber sobre a Rocket Wins
           </Text>
-          <ScrollLink
-            to="seller-principal"
-            spy
-            smooth
-            offset={-40}
-            duration={600}
-          >
-            <Button linkable={false}>VEJA MAIS</Button>
-          </ScrollLink>
+          <Button linkable={false}>VEJA MAIS</Button>
         </Flex>
         <Accordion />
       </Flex>
