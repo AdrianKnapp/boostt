@@ -14,7 +14,7 @@ const Benefits = () => {
         gap={5}
       >
         {benefitsData.map(({ title, description, icon, image }) => (
-          <GridItem>
+          <GridItem key={title}>
             <Benefit
               title={title}
               description={description}

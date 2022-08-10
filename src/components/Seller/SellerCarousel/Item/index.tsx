@@ -16,6 +16,7 @@ export type ItemProps = {
   description: string[];
   monthlyPrice?: string;
   showIcon?: boolean;
+  buttonHref?: string;
 };
 
 const Item = ({
@@ -28,6 +29,7 @@ const Item = ({
   monthlyPrice = '',
   description,
   showIcon = false,
+  buttonHref,
 }: ItemProps) => {
   return (
     <Flex
@@ -53,7 +55,7 @@ const Item = ({
         monthlyPrice={monthlyPrice}
       />
       <Flex justify="center">
-        <Button linkable />
+        <Button linkable href={buttonHref} />
       </Flex>
       <Flex justify="center">
         <UnorderedList

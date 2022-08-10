@@ -44,6 +44,7 @@ const SellerCarousel = () => {
               'Acesso ao robô lucrativo',
               'Acesso ao minicurso',
             ]}
+            buttonHref="https://pay.kiwify.com.br/Avf2QFc"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -63,6 +64,7 @@ const SellerCarousel = () => {
             ]}
             isPrincipal
             monthlyPrice="99,90/mês*"
+            buttonHref="https://pay.kiwify.com.br/40p0VO6"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -83,6 +85,7 @@ const SellerCarousel = () => {
             ]}
             monthlyPrice="69,90/mês*"
             showIcon
+            buttonHref="https://pay.kiwify.com.br/K2rUe2n"
           />
         </SwiperSlide>
       </Swiper>
