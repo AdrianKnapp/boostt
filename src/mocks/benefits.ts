@@ -1,24 +1,23 @@
-import { AiOutlineFieldTime } from 'react-icons/ai';
-import { FaMoneyBill } from 'react-icons/fa';
+import { AiOutlineFieldTime, AiOutlineSmile } from 'react-icons/ai';
 import { MdOutlineWhatshot } from 'react-icons/md';
-import { VscWorkspaceTrusted } from 'react-icons/vsc';
+import { TbCurrencyDollar } from 'react-icons/tb';
 
 const benefitsData = [
   {
-    icon: FaMoneyBill,
-    title: 'A Rocket Wins é um robô de tecnologia estrangeira',
+    icon: TbCurrencyDollar,
+    title: 'Robô com tecnologia nacional e estrangeira',
     description:
-      'Desenvolvida por profissionais, para indentificar padrões de apostas capazes de alcançar lucros constantes e previsiveis.',
+      'A Rocket Wins é uma empresa focada no desenvolvimento de um robô com tecnologia nacional e estrangeira   Nosso método visa identificar padrões de apostas capazes de alcançar lucros constantes e previsíveis.',
     image: {
       src: 'robo.svg',
       alt: 'Robô de tecnologia estrangeira.',
     },
   },
   {
-    icon: VscWorkspaceTrusted,
+    icon: AiOutlineSmile,
     title: 'Usabilidade fácil',
     description:
-      'Não requerindo qualquer tipo de conhecimento na área, sendo capaz de atender do leigo ao avançado.',
+      'Sem a necessidade de ter conhecimento na área, conseguimos ajudar desde os leigos aos já experientes no ramo.',
     image: {
       src: 'easy.svg',
       alt: '',
@@ -28,7 +27,7 @@ const benefitsData = [
     icon: AiOutlineFieldTime,
     title: 'Funcionamento em tempo integral',
     description:
-      'Uma vez ativada, nossa inteligencia é capaz de operar 24h por dia, 7 dias por semana através de sinais oportunos.',
+      'Uma vez ativada, nossa inteligência é capaz de operar 24h por dia, 7 dias por semana, emitindo os sinais oportunos para o sucesso.',
     image: {
       src: 'clock.svg',
       alt: '',
@@ -38,7 +37,7 @@ const benefitsData = [
     icon: MdOutlineWhatshot,
     title: 'Lançamento exclusivo',
     description:
-      'Tenha acesso a tecnologia mais atual e inovadora do mercado, recém chegada no Brasil.',
+      'A tecnologia mais inovadora do mercado acaba de chegar ao Brasil e você está tendo a chance de embarcar conosco nesse foguete rumo a lua. E aí? Vai ficar de fora?',
     image: {
       src: 'exclusive.svg',
       alt: '',

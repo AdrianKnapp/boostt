@@ -12,14 +12,16 @@ type ContentProps = {
 const Content = ({ title, description, icon }: ContentProps) => {
   return (
     <Flex width="100%" direction="column" gap={[2]} justify="center">
-      <Flex width="100%" justify={['center', null, 'flex-start']}>
-        <Text color={theme.colors.contrast} fontSize={25}>
-          {React.createElement(icon)}
+      <Flex align="center">
+        <Flex mr={3} h="100%" align="center" justify="center">
+          <Text color={theme.colors.contrast} h="min-content" fontSize={35}>
+            {React.createElement(icon)}
+          </Text>
+        </Flex>
+        <Text fontSize={theme.sizes.text.subtitle} fontWeight="bold">
+          {title}
         </Text>
       </Flex>
-      <Text fontSize={theme.sizes.text.title} fontWeight="bold">
-        {title}
-      </Text>
       <Text
         fontSize={theme.sizes.text.description}
         color={theme.colors.text.secondary}

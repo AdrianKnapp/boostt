@@ -7,9 +7,12 @@ import { theme } from 'styles/theme';
 type ButtonProps = {
   linkable?: boolean;
   children?: React.ReactNode;
+  href?: string;
 };
 
-const Button = ({ children, linkable = false }: ButtonProps) => {
+const Button = ({ children, linkable = false, href }: ButtonProps) => {
+  const buttonHref = href || process.env.NEXT_PUBLIC_SELLER_LINK;
+
   const button = (
     <ChakraButton
       bg={theme.colors.highlight}
@@ -30,11 +33,11 @@ const Button = ({ children, linkable = false }: ButtonProps) => {
   );
 
   return linkable ? (
-    <Link href={process.env.NEXT_PUBLIC_SELLER_LINK} passHref>
+    <Link href={buttonHref} passHref>
       <a>{button}</a>
     </Link>
   ) : (
-    <ScrollLink to="seller-principal" spy smooth offset={-20} duration={1000}>
+    <ScrollLink to="seller-principal" spy smooth offset={30} duration={1000}>
       {button}
     </ScrollLink>
   );

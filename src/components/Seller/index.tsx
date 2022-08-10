@@ -1,4 +1,4 @@
-import { Flex, Text } from '@chakra-ui/react';
+import { Flex, ResponsiveArray, Text } from '@chakra-ui/react';
 import useCountdownTimer from 'hooks/useCountdownTimer';
 import { theme } from 'styles/theme';
 
@@ -6,14 +6,13 @@ import Button from './Button';
 
 type SellerProps = {
   isPrincipal?: boolean;
-  isCentered?: boolean;
 };
 
-const Seller = ({ isPrincipal = false, isCentered = false }: SellerProps) => {
+const Seller = ({ isPrincipal = false }: SellerProps) => {
   const { days, hours } = useCountdownTimer();
 
-  const textPosition = isPrincipal || isCentered ? 'center' : 'left';
-  const flexAlign = isPrincipal || isCentered ? 'center' : 'flex-start';
+  const textPosition = ['center', null, 'left'] as ResponsiveArray<'center'>;
+  const flexAlign = ['center', null, 'flex-start'];
 
   const titleFontSize = [25, null, 30];
 

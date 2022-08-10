@@ -8,7 +8,7 @@ const SellerCarousel = () => {
   return (
     <Flex
       w="100%"
-      minH="430px"
+      minH="570px"
       borderRadius={5}
       position="relative"
       overflow="hidden"
@@ -20,13 +20,13 @@ const SellerCarousel = () => {
         modules={[Pagination, Autoplay, Navigation]}
         className="seller-swiper"
         autoplay={{
-          delay: 3000,
+          delay: 2500,
           disableOnInteraction: true,
         }}
         spaceBetween={20}
         breakpoints={{
           768: {
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 20,
           },
         }}
@@ -34,28 +34,58 @@ const SellerCarousel = () => {
       >
         <SwiperSlide>
           <Item
-            title="Assinatura mensal"
+            title="Plano Starter"
             subtitle="Para investidores conservadores"
-            highPrice="223,86"
-            discount="40%"
-            lowPrice="159,90"
-            description={['Acesso ao robô e ao minicurso', 'Pagamento mensal']}
+            highPrice="189,90"
+            discount="18%"
+            price="159,90"
+            description={[
+              'Pagamento mensal',
+              'Acesso ao robô lucrativo',
+              'Acesso ao minicurso',
+            ]}
+            buttonHref="https://pay.kiwify.com.br/Avf2QFc"
           />
         </SwiperSlide>
         <SwiperSlide>
           <Item
-            title="Assinatura trimestral"
+            title="Plano Pro"
             subtitle="Para investidores ambiciosos"
-            highPrice="335,86"
-            discount="40%"
-            lowPrice="239,90"
+            highPrice="413,86"
+            discount="38%"
+            price="299,90"
             description={[
-              'Acesso ao robô e ao minicurso',
-              '40% off',
-              'Pagamento de 3 em 3 meses',
+              'Pagamento a cada 3 meses.',
+              'Acesso ao robô lucrativo.',
+              'Acesso ao minicurso.',
+              'Prioridade no suporte.',
+              'Lista vip para novos jogos.',
+              'Grupo reservado no Telegram.',
             ]}
             isPrincipal
-            monthlyPrice="79,90/mês*"
+            monthlyPrice="99,90/mês*"
+            buttonHref="https://pay.kiwify.com.br/40p0VO6"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Item
+            title="Plano Vip Exclusive"
+            subtitle="Para investidores ousados"
+            highPrice="705,43"
+            discount="68%"
+            price="419,90"
+            description={[
+              'Pagamento a cada 6 meses.',
+              'Acesso ao robô lucrativo.',
+              'Acesso ao minicurso.',
+              'Prioridade máxima no suporte 24h.',
+              'Acesso exclusivo para novas oportunidades e jogos.',
+              'Acesso a comunidade Vip Exclusive.',
+              'Acesso antecipado a novas oportunidades de mercado.',
+            ]}
+            monthlyPrice="69,90/mês*"
+            showIcon
+            buttonHref="https://pay.kiwify.com.br/K2rUe2n"
           />
         </SwiperSlide>
       </Swiper>

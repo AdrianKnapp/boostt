@@ -1,11 +1,9 @@
 import { Flex, Text } from '@chakra-ui/react';
 import Container from 'components/Container';
 import useCountdownTimer from 'hooks/useCountdownTimer';
-import useMediaQuery from 'hooks/useMediaQuery';
 import { theme } from 'styles/theme';
 
 const Header = () => {
-  const [isMobile] = useMediaQuery(`(max-width: 768px)`);
   const { days, hours, minutes } = useCountdownTimer();
 
   const countDownColor = theme.colors.highlight;
@@ -22,27 +20,32 @@ const Header = () => {
       boxShadow="0px 0px 12px 0px rgba(0,0,0,0.8)"
     >
       <Container justify="center">
-        <Text
+        <Flex
           color="#180316"
           textAlign="center"
           fontSize={theme.sizes.text.description}
           letterSpacing={0.8}
           fontWeight="medium"
+          wrap="wrap"
+          align="center"
+          justify="center"
         >
-          Oferta de lançamento encerra em: {isMobile && <br />}
-          <Text fontWeight="bold" as="span" color={countDownColor}>
-            {days}
-          </Text>{' '}
-          DIAS{' '}
-          <Text fontWeight="bold" as="span" color={countDownColor}>
-            {hours}
-          </Text>{' '}
-          HORAS{' '}
-          <Text fontWeight="bold" as="span" color={countDownColor}>
-            {minutes}
-          </Text>{' '}
-          MIN
-        </Text>
+          <Text as="span"> Oferta de lançamento encerra em: </Text>
+          <Text as="span" px={1}>
+            <Text fontWeight="bold" as="span" color={countDownColor}>
+              {days}
+            </Text>{' '}
+            DIAS{' '}
+            <Text fontWeight="bold" as="span" color={countDownColor}>
+              {hours}
+            </Text>{' '}
+            HORAS{' '}
+            <Text fontWeight="bold" as="span" color={countDownColor}>
+              {minutes}
+            </Text>{' '}
+            MIN
+          </Text>
+        </Flex>
       </Container>
     </Flex>
   );
