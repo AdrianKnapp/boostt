@@ -17,7 +17,6 @@ const Testimonies = () => {
           <Testimony
             key={testimony.video.src}
             thumbnail={testimony.thumbnail}
-            video={testimony.video}
           />
         ))}
       </Grid>
