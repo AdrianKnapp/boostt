@@ -3,6 +3,7 @@ import Button from 'components/Seller/Button';
 import { theme } from 'styles/theme';
 
 import Header from './Header';
+import Icon from './Icon';
 import Pricing from './Pricing';
 
 export type ItemProps = {
@@ -14,6 +15,7 @@ export type ItemProps = {
   discount: string;
   description: string[];
   monthlyPrice?: string;
+  showIcon?: boolean;
 };
 
 const Item = ({
@@ -25,6 +27,7 @@ const Item = ({
   price,
   monthlyPrice = '',
   description,
+  showIcon = false,
 }: ItemProps) => {
   return (
     <Flex
@@ -38,7 +41,10 @@ const Item = ({
       gap={8}
       borderWidth={isPrincipal ? 1 : 0}
       borderColor={theme.colors.highlight}
+      position="relative"
+      overflow="hidden"
     >
+      {showIcon && <Icon />}
       <Header title={title} subtitle={subtitle} />
       <Pricing
         discount={discount}

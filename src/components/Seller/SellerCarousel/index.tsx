@@ -8,7 +8,7 @@ const SellerCarousel = () => {
   return (
     <Flex
       w="100%"
-      minH="530px"
+      minH="570px"
       borderRadius={5}
       position="relative"
       overflow="hidden"
@@ -84,6 +84,7 @@ const SellerCarousel = () => {
               'Acesso antecipado a novas oportunidades de mercado.',
             ]}
             monthlyPrice="69,90/mês*"
+            showIcon
           />
         </SwiperSlide>
       </Swiper>

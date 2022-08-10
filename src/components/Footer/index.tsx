@@ -25,7 +25,7 @@ const Footer = () => {
             fontSize="sm"
           >
             <Text as="span" fontWeight="bold">
-              Rocket Wins Vip
+              Rocket Wins
             </Text>{' '}
             - Todos os direitos reservados.
           </Text>
