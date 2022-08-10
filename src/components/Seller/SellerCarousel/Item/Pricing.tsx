@@ -34,7 +34,7 @@ const Pricing = ({
           {discount} OFF
         </Text>
       </Flex>
-      {isPrincipal ? (
+      {monthlyPrice ? (
         <>
           <Flex color={theme.colors.text.secondary} gap={2} justify="center">
             <Text fontWeight="bold">R$ {price}</Text>

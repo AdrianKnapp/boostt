@@ -56,8 +56,8 @@ const Item = ({
           listStyleType="none"
         >
           {description.map((item) => (
-            <ListItem key={item}>
-              <Text lineHeight={2}>{item}</Text>
+            <ListItem key={item} my={2}>
+              <Text>{item}</Text>
             </ListItem>
           ))}
         </UnorderedList>

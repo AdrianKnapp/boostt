@@ -8,7 +8,7 @@ const SellerCarousel = () => {
   return (
     <Flex
       w="100%"
-      minH="430px"
+      minH="530px"
       borderRadius={5}
       position="relative"
       overflow="hidden"
@@ -34,10 +34,10 @@ const SellerCarousel = () => {
       >
         <SwiperSlide>
           <Item
-            title="Assinatura mensal"
+            title="Plano Starter"
             subtitle="Para investidores conservadores"
-            highPrice="223,86"
-            discount="40%"
+            highPrice="189,90"
+            discount="18%"
             price="159,90"
             description={[
               'Pagamento mensal',
@@ -45,47 +45,45 @@ const SellerCarousel = () => {
               'Acesso ao minicurso',
               'Suporte 24 horas',
               'Lucre por 1 mês',
-              '7 dias de garantia',
             ]}
           />
         </SwiperSlide>
         <SwiperSlide>
           <Item
-            title="Assinatura trimestral"
+            title="Plano Pro"
             subtitle="Para investidores ambiciosos"
-            highPrice="335,86"
-            discount="40%"
-            price="239,90"
+            highPrice="413,86"
+            discount="38%"
+            price="299,90"
             description={[
-              'Pagamento a cada 3 meses',
-              'Acesso ao robô lucrativo',
-              'Acesso ao minicurso',
-              'Suporte 24 horas',
-              'Lista vip para novos jogos',
-              'Grupo vip no telegram',
-              '7 dias de garantia',
+              'Pagamento a cada 3 meses.',
+              'Acesso ao robô lucrativo.',
+              'Acesso ao minicurso.',
+              'Prioridade no suporte.',
+              'Lista vip para novos jogos.',
+              'Grupo reservado no Telegram.',
             ]}
             isPrincipal
-            monthlyPrice="79,90/mês*"
+            monthlyPrice="99,90/mês*"
           />
         </SwiperSlide>
         <SwiperSlide>
           <Item
-            title="Assinatura trimestral"
-            subtitle="Para investidores ambiciosos"
-            highPrice="704,85"
-            discount="50%"
-            price="469,90"
+            title="Plano Vip Exclusive"
+            subtitle="Para investidores ousados"
+            highPrice="705,43"
+            discount="68%"
+            price="419,90"
             description={[
-              'Pagamento a cada 6 meses',
-              'Acesso ao robô lucrativo',
-              'Acesso ao minicurso',
-              'Suporte 24 horas',
-              'Lista vip para novos jogos',
-              'Grupo vip no telegram',
-              '7 dias de garantia',
+              'Pagamento a cada 6 meses.',
+              'Acesso ao robô lucrativo.',
+              'Acesso ao minicurso.',
+              'Prioridade máxima no suporte 24h.',
+              'Acesso exclusivo para novas oportunidades e jogos.',
+              'Acesso a comunidade Vip Exclusive.',
+              'Acesso antecipado a novas oportunidades de mercado.',
             ]}
-            monthlyPrice="78,0/mês*"
+            monthlyPrice="69,90/mês*"
           />
         </SwiperSlide>
       </Swiper>
