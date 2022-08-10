@@ -20,7 +20,7 @@ const SellerCarousel = () => {
         modules={[Pagination, Autoplay, Navigation]}
         className="seller-swiper"
         autoplay={{
-          delay: 3000,
+          delay: 2500,
           disableOnInteraction: true,
         }}
         spaceBetween={20}
@@ -43,8 +43,6 @@ const SellerCarousel = () => {
               'Pagamento mensal',
               'Acesso ao robô lucrativo',
               'Acesso ao minicurso',
-              'Suporte 24 horas',
-              'Lucre por 1 mês',
             ]}
           />
         </SwiperSlide>

@@ -34,7 +34,7 @@ const Button = ({ children, linkable = false }: ButtonProps) => {
       <a>{button}</a>
     </Link>
   ) : (
-    <ScrollLink to="seller-principal" spy smooth offset={-20} duration={1000}>
+    <ScrollLink to="seller-principal" spy smooth offset={30} duration={1000}>
       {button}
     </ScrollLink>
   );
