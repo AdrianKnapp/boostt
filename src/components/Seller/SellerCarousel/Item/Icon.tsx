@@ -1,6 +1,5 @@
 import { Flex, Text } from '@chakra-ui/react';
 import { TbCrown } from 'react-icons/tb';
-import { theme } from 'styles/theme';
 
 const Icon = () => {
   return (

@@ -6,12 +6,9 @@ import { ImageProps } from 'types/image';
 
 type TestimonyProps = {
   thumbnail: ImageProps;
-  video: {
-    src: string;
-  };
 };
 
-const Testimony = ({ thumbnail, video }: TestimonyProps) => {
+const Testimony = ({ thumbnail }: TestimonyProps) => {
   return (
     <Box
       height={[90, 130, 200]}
