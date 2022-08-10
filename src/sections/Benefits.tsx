@@ -1,4 +1,4 @@
-import { Flex } from '@chakra-ui/react';
+import { Grid, GridItem } from '@chakra-ui/react';
 import Benefit from 'components/Benefit';
 import Container from 'components/Container';
 import Spacer from 'components/Spacer';
@@ -8,15 +8,13 @@ const Benefits = () => {
   return (
     <Container direction="column">
       <Spacer>O que é essa tecnologia?</Spacer>
-      <Flex direction="column" width="100%" gap={['80px', '100px', '80px']}>
+      <Grid
+        templateColumns={['repeat(1, 1fr)', null, 'repeat(2, 1fr)']}
+        width="100%"
+        gap={5}
+      >
         {benefitsData.map(({ title, description, icon, image }) => (
-          <Flex
-            key={title}
-            _even={{ flexDirection: ['column', 'column', 'row-reverse'] }}
-            direction={['column', 'column', 'row']}
-            width="100%"
-            gap={[10, 10, 5, 0]}
-          >
+          <GridItem>
             <Benefit
               title={title}
               description={description}
@@ -24,9 +22,9 @@ const Benefits = () => {
               image={image}
               key={title}
             />
-          </Flex>
+          </GridItem>
         ))}
-      </Flex>
+      </Grid>
     </Container>
   );
 };

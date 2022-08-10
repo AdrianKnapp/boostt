@@ -1,11 +1,10 @@
-import { AiOutlineFieldTime } from 'react-icons/ai';
-import { FaMoneyBill } from 'react-icons/fa';
+import { AiOutlineFieldTime, AiOutlineSmile } from 'react-icons/ai';
 import { MdOutlineWhatshot } from 'react-icons/md';
-import { VscWorkspaceTrusted } from 'react-icons/vsc';
+import { TbCurrencyDollar } from 'react-icons/tb';
 
 const benefitsData = [
   {
-    icon: FaMoneyBill,
+    icon: TbCurrencyDollar,
     title: 'Robô com tecnologia nacional e estrangeira',
     description:
       'A Rocket Wins é uma empresa focada no desenvolvimento de um robô com tecnologia nacional e estrangeira   Nosso método visa identificar padrões de apostas capazes de alcançar lucros constantes e previsíveis.',
@@ -15,7 +14,7 @@ const benefitsData = [
     },
   },
   {
-    icon: VscWorkspaceTrusted,
+    icon: AiOutlineSmile,
     title: 'Usabilidade fácil',
     description:
       'Sem a necessidade de ter conhecimento na área, conseguimos ajudar desde os leigos aos já experientes no ramo.',
