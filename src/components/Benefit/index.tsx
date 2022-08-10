@@ -1,9 +1,9 @@
-import { Box, Flex } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
+import React from 'react';
 import { IconType } from 'react-icons';
 import { ImageProps } from 'types/image';
 
 import Content from './Content';
-import Image from './Image';
 
 type BenefitProps = {
   title: string;
@@ -16,14 +16,9 @@ const Benefit = ({ title, description, icon, image }: BenefitProps) => {
   if (!image || !title) return null;
 
   return (
-    <>
-      <Box w={['100%', '100%', '50%']}>
-        <Image image={image} />
-      </Box>
-      <Box w={['100%', '100%', '50%']}>
-        <Content title={title} description={description} icon={icon} />
-      </Box>
-    </>
+    <Flex w="100%" h="100%" bg="gray.700" p={5} borderRadius={5} align="start">
+      <Content title={title} description={description} icon={icon} />
+    </Flex>
   );
 };
 
