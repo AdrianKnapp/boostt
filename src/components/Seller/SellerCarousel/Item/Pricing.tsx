@@ -4,7 +4,6 @@ import { theme } from 'styles/theme';
 import { ItemProps } from '.';
 
 type PricingProps = {
-  isPrincipal?: ItemProps['isPrincipal'];
   highPrice: ItemProps['highPrice'];
   discount: ItemProps['discount'];
   price: ItemProps['price'];
@@ -13,7 +12,6 @@ type PricingProps = {
 
 const Pricing = ({
   highPrice,
-  isPrincipal,
   discount,
   price,
   monthlyPrice,

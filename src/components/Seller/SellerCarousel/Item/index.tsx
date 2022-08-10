@@ -45,7 +45,6 @@ const Item = ({
         price={price}
         highPrice={highPrice}
         monthlyPrice={monthlyPrice}
-        isPrincipal={isPrincipal}
       />
       <Flex justify="center">
         <Button linkable />
