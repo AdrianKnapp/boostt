@@ -24,7 +24,10 @@ const Footer = () => {
             color={theme.colors.text.secondary}
             fontSize="sm"
           >
-            Rocket Wins - Todos os direitos reservados.
+            <Text as="span" fontWeight="bold">
+              Rocket Wins Vip
+            </Text>{' '}
+            - Todos os direitos reservados.
           </Text>
         </Container>
       </Flex>
